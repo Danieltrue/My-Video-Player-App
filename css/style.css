@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --width: 400px;
+    --height: 500px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main {
+    background: red;
+    width: var(--width);
+    height: var(--height);
+    margin-top: 4rem;
+    margin: 0 auto;
+}
+
+.video-holder {
+    width: var(--width);
+    height: var(--height);
+    margin-top: 4rem;
+    border-radius: 5px;
+    background: #000;
+    position: relative;
+}
+
+.video-holder-inner {
+    height: 80%;
+}
+
+
+.video-holder-inner video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.control-button {
+    height: 20%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.control-button.out {
+    opacity: 0;
+}
+
+.control-button input {
+    width: 400px;
+    margin: 0 1rem;
+
+}
+
+.control-button button {
+    margin: 0 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    transition:
+}
+
+.control-button button div {
+    color: #000;
+    background-color: #fff;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 50%;
+    padding: 0.8rem 1rem;
+    position: absolute;
+    opacity: 0;
+/*    transition: all 0.2s;*/
+    z-index: 2;
+}
+
+.control-button button div.show {
+    display: flex;
+    opacity: 1;
+}
+
+.control-button button:hover {
+    color: #0099ee;
+}
+
+.control-button p {
+    color: #fff;
+}
+
+button.play-again.true {
+    color: #0099ee;
+}
+
+.time {
+    font-size: 80%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Danny Movie Player</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <main>
+                <div class="video-holder row">
+                    <div class="video-holder-inner">
+                        <video>
+                            <source src="video/video.mp4" />
+                        </video>
+                    </div>
+                    <!--cintrol button-->
+                    <div class="control-button">
+                        <button data-msg="Play Video" class="play"><i class='bx bx-play'></i></button>
+                        <button data-msg="Stop Video" class="stop"><i class='bx bx-stop'></i></button>
+                        <button data-msg="Replay Video" class="replay"><i class='bx bx-reset'></i></button>
+                        <button data-msg="Repeat Video" class="play-again"><i class='bx bx-repost'></i></button>
+                        <input type="range" min="0" max="100" value="0" />
+                        <p class="time">00:00</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
